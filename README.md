@@ -37,3 +37,7 @@ Sets up `houses` as a list of logic variables (each house), each of which will i
 `(membero,	('Englishman', var(), var(), var(), 'red'), houses)`
 
 Stipulates that *one of the houses* has both the 'Englishman' and 'red' properties. The other properties are left 'blank' as logic variables, which get 'filled in' by the solver.
+
+## officePeoplePuzzle.py
+
+A pretty trivial 'puzzle' version of `officePeople.py`, with a FAR smaller solution space.  I didn't spend too much time on this so a lot of the rules are useless or redundant.
