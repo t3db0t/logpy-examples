@@ -15,14 +15,14 @@ Some basic examples of querying the `logpy` 'facts' relational knowledge base
 
 ## logpyZebra.py
 
-An implementation of the ('Zebra' logic puzzle)[http://en.wikipedia.org/wiki/Zebra_puzzle], adapted from/inspired by David Nolen's core.logic implementation here: https://rosettacode.org/wiki/Zebra_puzzle#Clojure
+An implementation of the ['Zebra' logic puzzle](http://en.wikipedia.org/wiki/Zebra_puzzle), adapted from/inspired by David Nolen's core.logic implementation here: https://rosettacode.org/wiki/Zebra_puzzle#Clojure
 
 The Zebra Puzzle provides 16 clues describing relationships between five houses and their properties, such as "In the middle house they drink milk" and "They drink water in a house next to the house where they smoke Blend", and finally asks, "Who owns the Zebra?"
 
 The solution to the puzzle is essentially a table of data, where each row represents one of 5 houses:
 
 | Nationality  | Smokes | Drinks | Pet | Color |
-| ------------- | ------------- |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
 | Englishman  | ... | ... | ... | ... |
 | Swede  | ... | ... | ... | ...  |
 
@@ -32,7 +32,7 @@ If you had all the data ahead of time, then you could just put it all in a datab
 
 `(eq, 		(var(), var(), var(), var(), var()), houses)`
 
-Sets up `houses` as a list of logic variables, each of which will itself contain a list
+Sets up `houses` as a list of logic variables (each house), each of which will itself contain a list of logic variables (each property of that house)
 
 `(membero,	('Englishman', var(), var(), var(), 'red'), houses)`
 
